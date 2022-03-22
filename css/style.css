@@ -8,10 +8,13 @@ body{
     text-align: center
 }
 
+
+/* typography */
 h1{
     margin-top: 0;
     font-size: 2.25rem;
-    font-weight: 300
+    font-weight: 300;
+    color: #fff
 }
 
 h1 + p{
@@ -37,6 +40,7 @@ h2 + p{
     font-weight: 900;
     color:#f18119;
     text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
 .fine-print{
@@ -50,8 +54,20 @@ strong {
 
 
 
-/* layout */
+/********* layout ************/
 
 
-/* typography */
+/* intro section */
+
+.intro{
+    background-color: #404040;
+    background-image: url("../images/bbq-ribs.jpg");
+    padding: 0 .25em 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-text{
+    order: -3
+}
 
