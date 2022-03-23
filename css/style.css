@@ -68,6 +68,7 @@ strong {
     background-color: #404040;
     background-image: url("../images/bbq-ribs.jpg");
     background-size: cover;
+    background-position: center;
     padding: 0 .5em 2em;
     display: flex;
     flex-direction: column;
