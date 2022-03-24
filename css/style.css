@@ -67,6 +67,7 @@ strong {
 .intro{
     background-color: #404040;
     background-image: url("../images/bbq-ribs.jpg");
+    background-size: cover;
     padding: 0 .5em 2em;
     display: flex;
     flex-direction: column;
@@ -84,8 +85,30 @@ strong {
 /* media query */
 
 @media (min-width: 580px){
+
+    body{
+        font-size: 1.125rem
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    h2,
+    h1+p{
+        font-size: 1.75rem;
+    }
+
     .container{
         display: flex;
         flex-direction: row;
+    }
+    
+    .intro{
+        width: 50%
+    }
+
+    .main-content{
+        width: 50%
     }
 }
