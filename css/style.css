@@ -14,11 +14,44 @@ h1{
     font-weight: 300
 }
 
+h1 + p{
+    color: #f18119;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 1.3125
+}
+
+h2 + p{
+    font-weight: 900;
+    font-size: 1rem;
+    color:#f18119;
+    text-transform: uppercase;
+}
+
+.top-text{
+    font-size: 0.625rem;
+    font-weight: 900;
+    color:#f18119;
+    text-transform: uppercase;
+}
+
+.fine-print{
+    font-size: 0.625rem;
+    letter-spacing: 1.2px
+}
+
 strong {
     font-weight: 900
 }
+
+
 
 /* layout */
 
 
 /* typography */
+
