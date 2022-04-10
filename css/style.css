@@ -1,5 +1,9 @@
 /* main elements */
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     font-family: 'Sourcs Sans Pro', sans-serif;
@@ -108,6 +112,12 @@ strong {
     .main-content{
         width: 50%;
         min-height: 100vh;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
    
