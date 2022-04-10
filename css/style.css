@@ -5,7 +5,7 @@ body{
     font-family: 'Sourcs Sans Pro', sans-serif;
     font-size: 1rem;
     color: #404040;
-    text-align: center
+    text-align: center;
 }
 
 
@@ -88,7 +88,11 @@ strong {
 @media (min-width: 580px){
 
     body{
-        font-size: 1.125rem
+        font-size: 1.125rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
     }
 
     h1{
@@ -99,17 +103,12 @@ strong {
     h1+p{
         font-size: 1.75rem;
     }
-
-    .container{
-        display: flex;
-        flex-direction: row;
-    }
     
-    .intro{
-        width: 50%
+    .intro,
+    .main-content{
+        width: 50%;
+        min-height: 100vh;
     }
 
-    .main-content{
-        width: 50%
-    }
+   
 }
