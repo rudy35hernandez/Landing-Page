@@ -63,6 +63,8 @@ strong {
 
 
 
+
+
 /********* layout ************/
 
 
@@ -74,23 +76,23 @@ strong {
     background-size: cover;
     background-position: center;
     padding: 0 .5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
     
 }
 
 
 
-.container{
+.intro > *,
+.main-content > *{
     max-width: 400px;
-    margin: 0 auto;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.container-intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 50vh;
-}
+
 
 
 /* main section */
@@ -99,13 +101,39 @@ strong {
     padding: 2em 1em;
 }
 
+/* form */
 
+.email-collector{
+    /* border: 3px solid red; */
+    width: 80%;
+    max-width: 300px;
+}
+
+input{
+    font-family: inherit;
+    width: 100%;
+    padding: .3em;
+    margin-bottom: .75em;
+    border: 1px solid #404040;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-primary{
+    width: 100%;
+    padding: .3em;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #FF713B, #FFA51D);
+    color: white;
+    font-weight: 900;
+}
 
 
 
 /* media query */
 
-@media (min-width: 500px){
+@media (min-width: 580px){
 
     body{
         font-size: 1.125rem;
@@ -133,7 +161,4 @@ strong {
         justify-content: center;
     }
 
-    .container-intro{
-        height: 100%;
-    }
 }
