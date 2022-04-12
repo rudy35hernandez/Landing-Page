@@ -49,7 +49,12 @@ h2 + p{
     color:#f18119;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    order: -4
+    order: -4;
+    border-top: 5px solid #f18119;
+    margin: 0;
+    padding-top: .5em;
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+
 }
 
 .fine-print{
@@ -73,6 +78,7 @@ strong {
 .intro{
     background-color: #404040;
     background-image: url("../images/bbq-ribs.jpg");
+    background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
     padding: 0 .5em 2em;
@@ -112,21 +118,41 @@ strong {
 input{
     font-family: inherit;
     width: 100%;
-    padding: .3em;
+    padding: .25em;
     margin-bottom: .75em;
     border: 1px solid #404040;
     border-radius: 5px;
     text-align: center;
+    transform: scale(1.0);
+    transition: transform 400ms;
+}
+
+input:focus{
+    transform: scale(1.1)
+}
+
+.btn{
+    width: 100%;
+    padding: .5em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.625rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
 }
 
 .btn-primary{
-    width: 100%;
-    padding: .3em;
-    border: none;
-    border-radius: 5px;
-    background-image: linear-gradient(to right, #FF713B, #FFA51D);
+    background-image: linear-gradient(to left, #FF713B, #FFA51D);
     color: white;
-    font-weight: 900;
+    transform: scale(1.0);
+    transition: transform 400ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus{
+    transform: scale(1.1)
 }
 
 
